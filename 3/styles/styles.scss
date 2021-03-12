@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import "./imports_var.scss";
+
+body{
+    background: #c3cfe2;
+    margin: 0px;
+    padding: 0px;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding-top: 12rem;
+    p{
+        color:$iconColor;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: underline;
+        font-size: 0.9rem;
+        transform: translateX(-4rem);
+        opacity: 0;
+        &:hover{
+            transform: translateX(0rem);
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+}
+.social-media::before{
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        color: $iconColor;
+}
+.social-media__blog{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    margin-right:0%;
+    width: 3rem;
+    height: 3rem;
+    transition: 250ms ease-in-out;
+    background:#e17b77;
+    &:hover{
+        width: 250px;
+    }
+}
+
+.social-media__blog--txt:hover{
+    background: #e17b77;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 9rem;
+        height: 3rem;
+}
+
+.social-media__blog::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    padding: 0 1rem 0 3.5rem;
+    content: "\f5fc";
+}
+.social-media__twitter{
+    @include social-media-box();
+    background: #00aced;
+    &:hover{
+        width: 250px;
+    }
+}
+.social-media__twitter::before{
+    font-family: "Font Awesome 5 Brands"; 
+    padding: 0 1rem 0 3.5rem;
+    content: "\f099";
+}
+.social-media__linkedin{
+    @include social-media-box();
+    background: #007bb6;
+    &:hover{
+        width: 280px;
+    }
+}
+.social-media__linkedin::before{
+    font-family: "Font Awesome 5 Brands"; 
+    padding: 0 1rem 0 4.2rem;
+    content: "\f0e1";
+}
+.social-media__facebook{
+    @include social-media-box();
+    background: #3b5998;
+    &:hover{
+        width: 280px;
+    }
+}
+.social-media__facebook::before{
+    font-family: "Font Awesome 5 Brands"; 
+    padding: 0 1rem 0 4.6rem;
+    content: "\f39e";
+}
+.social-media__github{
+    @include social-media-box();
+    background: #333;
+    &:hover{
+        width: 280px;
+    }
+}
+.social-media__github::before{
+    font-family: "Font Awesome 5 Brands"; 
+    padding: 0 1rem 0 4.2rem;
+    content: "\f09b";
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "imports_var.scss"
+    ],
+    "names": [],
+    "file": "imports_var.css"
+}
